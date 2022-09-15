@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         button.setOnClickListener {
             var textToDieplay = viewModel.upAdd().toString()
             textView.text = textToDieplay
+
         }
 
 
