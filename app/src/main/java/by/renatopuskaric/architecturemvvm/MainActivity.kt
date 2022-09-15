@@ -19,10 +19,9 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         val  view: View = binding.root
         setContentView(view)
 
-        val viewModel = ViewModelProvider(this).get(MainActivityViewModel::class.java)
-
         binding.button.setOnClickListener {
-            var textToDieplay = viewModel.upAdd().toString()
+            var dispaly = 0
+            var textToDieplay = dispaly++.toString()
             binding.textView.text = textToDieplay
         }
 
